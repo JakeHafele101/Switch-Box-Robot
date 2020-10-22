@@ -2,7 +2,7 @@
 #include <Adafruit_PWMServoDriver.h>
 
 #define SERVO_MIN  500 // This is the 'minimum' pulse length count (out of 4096)
-#define SERVO_MAX  2400 // This is the 'maximum' pulse length count (out of 4096)
+#define SERVO_MAX  2500 // This is the 'maximum' pulse length count (out of 4096)
 #define SERVO_FREQ 50 // Analog servos run at ~50 Hz updates
 
 
