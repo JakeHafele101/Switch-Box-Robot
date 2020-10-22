@@ -7,23 +7,32 @@
 
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
-const int servo[5] = {0, 1, 2, 3, 4}
-
+const int servo[5] = {0, 1, 2, 3, 4};
+const int toggle[1] = {4};
 
 void setup() {
 
   pwm.begin();
+  Serial.begin(9600);
+ 
+pinMode(toggle[1], INPUT_PULLUP);
+
   pwm.setPWMFreq(SERVO_FREQ);  // Analog servos run at ~50 Hz updates
 }
 
 void loop() {
-  
-
-  pwm.setPWM(0, 0, pulseWidth(90));
-  pwm.setPWM(1, 0, pulseWidth(90));
-  pwm.setPWM(2, 0, pulseWidth(90));
-  pwm.setPWM(3, 0, pulseWidth(90));
-  pwm.setPWM(4, 0, pulseWidth(90));
+  Serial.println(digitalRead(toggle[0]));
+if(digitalRead(toggle[0]) == LOW){
+  Serial.println("VoltageLow");
+  pwm.setPWM(0, 0, pulseWidth(180));
+  delay (1000);
+   pwm.setPWM(0, 0, pulseWidth(0));
+  delay (2000);
+}
+  //pwm.setPWM(1, 0, pulseWidth(90));
+ // pwm.setPWM(2, 0, pulseWidth(90));
+  //pwm.setPWM(3, 0, pulseWidth(90));
+ // pwm.setPWM(4, 0, pulseWidth(90));
 
   delay(100);
   
@@ -32,7 +41,7 @@ void loop() {
 
 int pulseWidth(int angle){
   int pulseWide, analogValue;
-  pulseWide = map(angle, 0, 180, SERVO_MIN, SERVO_MAX);
+  pulseWide = map(angle, 0, 270, SERVO_MIN, SERVO_MAX);
   analogValue = int(float(pulseWide) / 1000000 * SERVO_FREQ * 4096);
   return analogValue;
 }
