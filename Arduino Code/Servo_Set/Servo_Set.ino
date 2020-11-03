@@ -25,6 +25,7 @@ void loop() {
 if(digitalRead(toggle[0]) == LOW){
   Serial.println("VoltageLow");
   pwm.setPWM(0, 0, pulseWidth(180));
+  // if the this is brooken before the servo has finished then return to the initial position and break the if statement.
   delay (1000);
    pwm.setPWM(0, 0, pulseWidth(0));
   delay (2000);
@@ -34,7 +35,7 @@ if(digitalRead(toggle[0]) == LOW){
   //pwm.setPWM(3, 0, pulseWidth(90));
  // pwm.setPWM(4, 0, pulseWidth(90));
 
-  delay(100);
+  
   
   
 }
