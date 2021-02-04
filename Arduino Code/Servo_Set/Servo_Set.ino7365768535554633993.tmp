@@ -15,25 +15,30 @@ void setup() {
   pwm.begin();
   Serial.begin(9600);
  
-  pinMode(toggle[1], INPUT_PULLUP);
+pinMode(toggle[1], INPUT_PULLUP);
 
   pwm.setPWMFreq(SERVO_FREQ);  // Analog servos run at ~50 Hz updates
 }
 
 void loop() {
   Serial.println(digitalRead(toggle[0]));
-//  if(digitalRead(toggle[0]) == LOW){
-//    Serial.println("VoltageLow");
-//    pwm.setPWM(0, 0, pulseWidth(180));
-//    // if the this is brooken before the servo has finished then return to the initial position and break the if statement.
-//    delay (1000);
-//    pwm.setPWM(0, 0, pulseWidth(0));
-//    delay (2000);
-//  }
-  pwm.setPWM(0, 0, pulseWidth(90));
-  pwm.setPWM(1, 0, pulseWidth(90));
-//  pwm.setPWM(3, 0, pulseWidth(90));
-//  pwm.setPWM(4, 0, pulseWidth(90));
+if(digitalRead(toggle[0]) =HIGH){
+  Serial.println("VoltageLow");
+  pwm.setPWM(0, 0, pulseWidth(180));
+  pwm.setPWM(1, 0, pulseWidth(135));
+  pwm.setPWM(2, 0, pulseWidth(45));
+ 
+  // if the this is brooken before the servo has finished then return to the initial position and break the if statement.
+  delay (1000);
+   pwm.setPWM(0, 0, pulseWidth(0));
+    pwm.setPWM(1, 0, pulseWidth(45));
+  pwm.setPWM(2, 0, pulseWidth(135));
+  delay (300);
+}
+  //pwm.setPWM(1, 0, pulseWidth(90));
+ // pwm.setPWM(2, 0, pulseWidth(90));
+  //pwm.setPWM(3, 0, pulseWidth(90));
+ // pwm.setPWM(4, 0, pulseWidth(90));
 
   
   
