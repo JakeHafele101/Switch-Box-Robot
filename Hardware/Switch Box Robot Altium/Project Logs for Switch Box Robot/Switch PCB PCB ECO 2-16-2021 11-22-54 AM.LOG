@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=D7 Pin=R7-2
+Removed Pin From Net: NetName=D4 Pin=R8-2
+Removed Pin From Net: NetName=D7 Pin=SW7-2
+Removed Pin From Net: NetName=D4 Pin=SW8-2
+Added Pin To Net: NetName=D4 Pin=R7-2
+Added Pin To Net: NetName=D7 Pin=R8-2
+Added Pin To Net: NetName=D4 Pin=SW7-2
+Added Pin To Net: NetName=D7 Pin=SW8-2
+Added Room: Name=Switch PCB Schematic

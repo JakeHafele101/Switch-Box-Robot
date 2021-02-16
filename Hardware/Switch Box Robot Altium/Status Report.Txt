@@ -1,0 +1,12 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Free Documents]
+   Generated File[Switch PCB.RUL]
+   Generated File[Switch PCB.EXTREP]
+   Generated File[Switch PCB.REP]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 7:12:13 PM On 1/25/2021

@@ -30,12 +30,24 @@ void loop() {
 //    pwm.setPWM(0, 0, pulseWidth(0));
 //    delay (2000);
 //  }
-  pwm.setPWM(0, 0, pulseWidth(90));
-  pwm.setPWM(1, 0, pulseWidth(90));
-//  pwm.setPWM(3, 0, pulseWidth(90));
-//  pwm.setPWM(4, 0, pulseWidth(90));
+//
+//  
+//  pwm.setPWM(0, 0, pulseWidth(0)); //Base servo
+//  pwm.setPWM(1, 0, pulseWidth(180)); //Lower arm servo
+//  pwm.setPWM(3, 0, pulseWidth(90)); //Upper arm servo
+//  pwm.setPWM(4, 0, pulseWidth(0)); //right window open servo, rest 0 degrees, open 135 degrees
+//  pwm.setPWM(5, 0, pulseWidth(180)); //Left window open servo, rest 180 degrees, open 45 degrees
 
-  
+
+  pwm.setPWM(3, 0, pulseWidth(0)); //right window open servo, rest 0 degrees, open 135 degrees
+  pwm.setPWM(4, 0, pulseWidth(180)); //Left window open servo, rest 180 degrees, open 45 degrees
+
+  delay(3000);
+
+  pwm.setPWM(3, 0, pulseWidth(180)); //right window open servo, rest 0 degrees, open 135 degrees
+  pwm.setPWM(4, 0, pulseWidth(0)); //Left window open servo, rest 180 degrees, open 45 degrees
+
+  delay(3000);
   
   
 }

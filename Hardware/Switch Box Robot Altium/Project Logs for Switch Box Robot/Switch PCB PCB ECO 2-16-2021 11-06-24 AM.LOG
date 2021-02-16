@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Added Member To Class: ClassName=Switch PCB Schematic Member=Component J1 SSQ-102-01-G-S
+Added Room: Name=Switch PCB Schematic
