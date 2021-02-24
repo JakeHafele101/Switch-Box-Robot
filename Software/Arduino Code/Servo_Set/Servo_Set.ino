@@ -18,6 +18,9 @@ void setup() {
   pinMode(toggle[1], INPUT_PULLUP);
 
   pwm.setPWMFreq(SERVO_FREQ);  // Analog servos run at ~50 Hz updates
+
+idle();
+
 }
 
 void loop() {
@@ -31,23 +34,18 @@ void loop() {
 //    delay (2000);
 //  }
 //
-//  
-//  pwm.setPWM(0, 0, pulseWidth(0)); //Base servo
-//  pwm.setPWM(1, 0, pulseWidth(180)); //Lower arm servo
-//  pwm.setPWM(3, 0, pulseWidth(90)); //Upper arm servo
-//  pwm.setPWM(4, 0, pulseWidth(0)); //right window open servo, rest 0 degrees, open 135 degrees
-//  pwm.setPWM(5, 0, pulseWidth(180)); //Left window open servo, rest 180 degrees, open 45 degrees
+//
 
 
-  pwm.setPWM(3, 0, pulseWidth(0)); //right window open servo, rest 0 degrees, open 135 degrees
-  pwm.setPWM(4, 0, pulseWidth(180)); //Left window open servo, rest 180 degrees, open 45 degrees
+ //delay(5000);
+ 
+ 
+ armOutExtension();
+ 
+ armRetractIdle();
+ 
 
-  delay(3000);
-
-  pwm.setPWM(3, 0, pulseWidth(180)); //right window open servo, rest 0 degrees, open 135 degrees
-  pwm.setPWM(4, 0, pulseWidth(0)); //Left window open servo, rest 180 degrees, open 45 degrees
-
-  delay(3000);
+ 
   
   
 }
@@ -57,4 +55,56 @@ int pulseWidth(int angle){
   pulseWide = map(angle, 0, 270, SERVO_MIN, SERVO_MAX);
   analogValue = int(float(pulseWide) / 1000000 * SERVO_FREQ * 4096);
   return analogValue;
+}
+
+void openWindow(){
+  pwm.setPWM(3, 0, pulseWidth(180)); //right window open servo, rest 0 degrees, open 135 degrees
+  pwm.setPWM(4, 0, pulseWidth(0)); //Left window open servo, rest 180 degrees, open 45 degrees
+}
+
+void closeWindow(){
+  pwm.setPWM(3, 0, pulseWidth(0)); //right window open servo, rest 0 degrees, open 135 degrees
+  pwm.setPWM(4, 0, pulseWidth(180)); //Left window open servo, rest 180 degrees, open 45 degrees
+
+}
+void idle() {
+ pwm.setPWM(0, 0, pulseWidth(90)); //Base servo
+  pwm.setPWM(1, 0, pulseWidth(170)); //Lower arm servo
+  pwm.setPWM(2, 0, pulseWidth(10)); //Upper arm servo
+  closeWindow();
+  delay(1000);
+}
+
+void armOutExtension(){ //this will need to change for each switch
+   openWindow();
+   
+     
+  pwm.setPWM(2, 0, pulseWidth(40)); //Upper arm servo
+  delay(700);
+   pwm.setPWM(1, 0, pulseWidth(120));//Lower arm servo/90
+  pwm.setPWM(2, 0, pulseWidth(70)); //Upper arm servo //85
+  delay(500);
+  pwm.setPWM(1, 0, pulseWidth(90)); //Lower arm servo/90
+  pwm.setPWM(2, 0, pulseWidth(95)); //upper arm servo/90
+  delay(700);
+  pwm.setPWM(0, 0, pulseWidth(110));//base servo CHANGE THIS PER FUNCTION
+  delay(500);
+  pwm.setPWM(0, 0, pulseWidth(90));//base servo CHANGE THIS PER FUNCTION
+ delay(500);
+ pwm.setPWM(0, 0, pulseWidth(70));//base servo CHANGE THIS PER FUNCTION
+ delay(500);
+}
+
+
+void armRetractIdle(){
+  pwm.setPWM(0, 0, pulseWidth(90));//base servo CHANGE THIS PER FUNCTION
+  delay(500);
+  pwm.setPWM(2, 0, pulseWidth(95)); //upper arm servo/90
+   pwm.setPWM(1, 0, pulseWidth(90)); //Lower arm servo/90
+    delay(1000);
+   pwm.setPWM(1, 0, pulseWidth(120));//Lower arm servo/90
+  pwm.setPWM(2, 0, pulseWidth(70)); //Upper arm servo //85
+  delay(500);
+  closeWindow();
+  idle();
 }
