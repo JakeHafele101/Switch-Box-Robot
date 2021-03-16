@@ -46,7 +46,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -74,90 +74,86 @@ GenerateClassCluster=0
 DocumentUniqueId=KGYUXNWE
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Switch Box Robot\Design Rule Check - Switch PCB.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument3]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument4]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument5]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument6]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM1
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM2
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM3
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM5
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM13
 DItemRevisionGUID=
 
-[GeneratedDocument11]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM15
 DItemRevisionGUID=
 
-[GeneratedDocument12]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GM16
 DItemRevisionGUID=
 
-[GeneratedDocument13]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument14]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument15]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument16]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument17]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument18]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument19]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument20]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.REP
 DItemRevisionGUID=
 
-[GeneratedDocument21]
+[GeneratedDocument20]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument22]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for Switch Box Robot\Switch PCB.TXT
 DItemRevisionGUID=
 
@@ -280,7 +276,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HPBA372C (HP ENVY Pro 6400 series)
+TargetPrinter=HP ENVY Pro 6400 series [BA372C]
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -380,7 +376,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HPBA372C (HP ENVY Pro 6400 series)
+TargetPrinter=HP ENVY Pro 6400 series [BA372C]
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing

@@ -2,41 +2,6 @@
 FileName = Switch PCB.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top Assembly
-      File : Switch PCB.GM5
-
-    Adding Layer      : Top Assembly
-
-
-Used DCodes :
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : Switch PCB.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D28
-    D29
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-*************************************************************
-
-*************************************************************
 Generating : Top Component Center
       File : Switch PCB.GM16
 
@@ -44,7 +9,7 @@ Generating : Top Component Center
 
 
 Used DCodes :
-    D45
+    D47
 *************************************************************
 
 *************************************************************
@@ -55,8 +20,8 @@ Generating : Mechanical 15
 
 
 Used DCodes :
-    D45
-    D46
+    D47
+    D48
 *************************************************************
 
 *************************************************************
@@ -67,7 +32,29 @@ Generating : Mechanical 13
 
 
 Used DCodes :
-    D45
+    D47
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : Switch PCB.GM5
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : Switch PCB.GM3
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D11
 *************************************************************
 
 *************************************************************
@@ -78,7 +65,7 @@ Generating : Top 3D Body
 
 
 Used DCodes :
-    D13
+    D11
 *************************************************************
 
 *************************************************************
@@ -89,7 +76,7 @@ Generating : Mechanical 1
 
 
 Used DCodes :
-    D15
+    D14
 *************************************************************
 
 *************************************************************
@@ -104,6 +91,36 @@ Generating : Bottom Solder
 
 
 Used DCodes :
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Switch PCB.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
     D21
     D22
     D23
@@ -118,6 +135,24 @@ Used DCodes :
     D32
     D33
     D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Switch PCB.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
 *************************************************************
 
 *************************************************************
@@ -149,16 +184,16 @@ Used DCodes :
     D16
     D17
     D18
-    D28
     D29
-    D35
-    D36
+    D30
     D37
     D38
     D39
     D40
     D41
     D42
+    D43
+    D44
 *************************************************************
 
 *************************************************************
@@ -171,13 +206,12 @@ Generating : Top Layer
 
 
 Used DCodes :
-    D15
+    D14
     D16
     D17
     D18
-    D28
     D29
-    D35
+    D30
     D36
     D37
     D38
@@ -187,65 +221,32 @@ Used DCodes :
     D42
     D43
     D44
+    D45
+    D46
 *************************************************************
 
 *************************************************************
-Generating : Top Courtyard
-      File : Switch PCB.GM3
+Generating : Bottom Layer
+      File : Switch PCB.GBL
 
-    Adding Layer      : Top Courtyard
-
-
-Used DCodes :
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : Switch PCB.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
+    Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D16
-    D17
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : Switch PCB.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
     D29
     D30
-    D31
-    D32
-    D33
-    D34
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
 *************************************************************
 
 *************************************************************
@@ -258,15 +259,15 @@ Generating : Bottom Pad Master
 
 
 Used DCodes :
-    D28
     D29
-    D35
-    D36
+    D30
     D37
     D38
     D39
     D40
     D41
     D42
+    D43
+    D44
 *************************************************************
 
